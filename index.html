@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.typekit.net/jlk3eov.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Making Process of Animation
+	</title>
+	<style>
+		@font-face{
+			src: url("hahmlet-light.otf");
+			font-family: "hahmlet-light";
+		}
+		@font-face{
+			src: url("hahmlet-regular.otf");
+			font-family: "hahmlet-regular";
+		}
+		html, body, header, h1, h2, h3, div, p{margin: 0; padding: 0;}
+		section{}
+		h1{}
+		h2{font-family:"hahmlet-light"; font-size: 2.4em; font-weight: lighter;}
+		p{font-family: "hahmlet-regular"; font-size:1.3em; font-weight: lighter; line-height: 1.7;letter-spacing: -0.04em}
+		nav{position: fixed;}
+
+
+		.kor-title{font-family:"hahmlet-light"; font-size: 3.3em; font-weight: lighter; margin-top: -50px;}
+		.eng-title{font-family: "bookmania", serif;font-weight: 300;font-style: italic; font-size: 6em}
+		.eng-subtitle{font-family: "bookmania", serif;font-weight: 300;font-style: italic; font-size: 2em; background-color: black;color: white; line-height: 1; display: inline-block;}
+		.font-white{color: white}
+		.font-black{color: black}
+		.text-center{text-align: center}
+		.text-left{text-align: left}
+
+
+		.flexbox{display: flex;position: relative; width: 100%; height: auto; flex-wrap: wrap;}
+		.wrapper1{width: 38.4%; height: auto; background: blue; background: url(starry-night.jpg); background-attachment: fixed;background-size: 30% auto; position: relative;}
+		.star{margin: auto; height: auto; position: relative;}
+		.star img{width: 100%; height: auto; margin-top:200px}
+		.wrapper2{width: 61.6%;height:auto; background:#11ADEA;position: relative;}
+		.wrapper3{width: 61.6%;height:auto; background:#89E77C;position: relative;}
+		.right-contents{width: 85%; height: auto; margin:auto; position: relative;}
+
+		.sticky{position: sticky; top:10%}
+		.z1{z-index: 3}
+		.z2{z-index: 2}
+		.z3{z-index: 1}
+		
+
+		.border-bottom-white{border-bottom: 2px solid white;}
+		.border-bottom-black{border-bottom: 2px solid black;}
+
+		.margin-auto{margin:auto}
+		.margin-top50{margin-top: 50px}
+		.margin-top-mi20{margin-top: -20px}
+		.margin-top-mi50{margin-top: -50px}
+		.padding-top50{padding-top: 50px}
+		.padding-top100{padding-top:100px}
+		.padding-top120{padding-top:120px}
+		.padding-top130{padding-top:130px}
+		.padding-top150{padding-top:150px}
+		.padding-top300{padding-top:300px}
+		.padding-top350{padding-top:350px}
+		.padding-top500{padding-top:500px}
+		.padding-top1100{padding-top:1100px}
+		.top240{top:240px}
+		.left130{left: 130px}
+		.right0{right: 0%;text-align: right;}
+
+
+		.size50{width: 50%}
+		.relative{position: relative;}
+		.absolute{position: absolute;}
+		.block{display: block}
+		.nobg{background-color: transparent;}
+
+		
+	</style>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<section>
+		<nav>
+		<div class="nav"></div>
+		<div class="nav"></div>
+		<div class="nav"></div>
+		<div class="nav"></div>
+		</nav>
+
+		<div class="flexbox">
+			<div class="wrapper1">
+				<div class="star">
+					<img src="img01.png" class="sticky z1">
+					<img src="img02.png" class="sticky z2">
+					<img src="img03.png" class="sticky z3">
+					<img src="img04.png" class="sticky z1 padding-top1100">
+				
+				</div>
+				
+			</div>
+			<div class="wrapper2">
+				<div class="right-contents">
+					<h1 class="eng-title">Development</h1>
+					<h1 class="kor-title right0">: 세계의 형성</h1>
+					<h2 class="font-white padding-top50"><span class="border-bottom-white">1. 아이디어 발전시키기</span></h2>
+					<div class="flexbox">
+						 <img src="img01.png" class="size50 margin-top-mi20">
+						 <p class="eng-subtitle absolute top240 left130">reaserch</p>
+						 <p class="padding-top130">애니메이션을 만들기 앞서 애니메이션의 <br>배경이 되는 문화, 역사, 과학, 예술 등을<br>깊이 연구하고 체험을 통해 사실적인<br>세계와 매력적인 캐릭터를 구상한다.</p>	
+					</div>
+					<div class="relative">
+						<img src="img02.png" class="size50 padding-top350"  style="padding-left: 25.5%;">
+						 <p class="eng-subtitle margin-top-mi50 " style="left:50%">story</p>
+						 <p class="text-center ">
+						 	스토리 아티스트가 감독과 협력하여 애니메이션의<br>내러티브를 
+							시각화하기 시작한다.<br>스토리 아티스트는 내러티브, 캐릭터, 세계뿐만<br>아니라 
+							영화의 전체적인 방향에 맞춰<br>감정, 표현, 타이밍, 스테이징, 프레이밍까지 고려한다.
+						 </p>
+					</div>
+					<div class="margin-auto block relative">
+						<img src="img03.png" class="size50 padding-top300 block right0 relative" style="margin-left: -12%"></div>
+						 <p class="eng-subtitle margin-top-mi50 margin-auto">visual<br>development</p>
+						 <br> <br>
+						  <p class="right0 text-left">
+						 	프로덕션 디자인 팀이 캐릭터, 세계관,<br>
+							스토리를 생생하게 구체화한다. 이 단계에서는<br> 
+							리서치와 스토리를 통해 얻은 정보를 바탕으로 <br>
+							영화의 비주얼을 탐색하고 정립한다.
+						 </p>
+						 <br>
+						   <p class="right0 text-left">
+						 	비주얼 디벨롭 아티스트는 색감, 디자인,<br>
+							형태등을 고려하여 캐릭터와 배경을 제작하고<br>
+							스토리의 테마를 시각적으로 강화한다.
+						 </p>
+						<div>
+							<p class="eng-subtitle nobg padding-top130" style="font-size: 3em;">More About<br>Visual Development</p>
+							<img src="img05.jpg" style="width:100%">
+							<p class="right0 text-left">
+						 	매력적인 캐릭터를 창조하라
+							</p>
+							<p class="right0 text-left">
+						 	“ 캐릭터는 어떻게 생겼을까? 어떤 옷을 입을까? 어디에 살고 있을까?<br>이러한 질문은 스토리의 주제를 강조하는 데 도움이 되며,<br>비주얼 디벨롭먼트는 이러한 아이디어를 실현하는 첫 번째 단계이다. ”
+							</p>
+						</div>
+						<div>
+							<h2 class="font-white padding-top300"><span class="border-bottom-white">2. 편집과 사운드</span></h2>
+							<img src="img04.png" style="width:50%">
+							<p class="eng-subtitle margin-top-mi50 margin-auto">
+								editorial
+							</p>
+							<p class="right0 text-left">
+						 	편집팀은 감독의 비전을 컷으로 구체화하고<br>
+							구현하는 데 도움을 준다. 적절한 리듬과<br>
+							페이스로 스토리를 전달하는 역할을 담당한다.
+						 </p>
+
+							<p class="eng-subtitle margin-top-mi50 margin-auto">
+								sound
+							</p>
+							<p class="right0 text-left" style="padding-bottom: 200px">
+						 	또한 편집자는 제작 과정 전반에 걸쳐 임시 음향<br>
+							효과와 음악 편집을 감독한다. 사운드 디자니어 및<br>
+							음악 작곡가와 협업하여 최종 포스트 프로덕션<br>과정에서 일관된 영화의 사운드를 구현한다.
+						 </p>
+
+						
+						</div>
+					</div>
+			</div>
+	
+				
+		</div>
+		<div class="flexbox">
+			<div class="wrapper1">
+				<div class="star">
+					<img src="img06.png" class="sticky z1">
+					<img src="img02.png" class="sticky z2">
+					<img src="img03.png" class="sticky z3">
+					<img src="img04.png" class="sticky z1 padding-top1100">
+					<img src="img06.png" class="sticky z1" >
+				</div>
+				
+			</div>
+			<div class="wrapper3">
+				<div class="right-contents">
+					<h1 class="eng-title">Asset Creation</h1>
+					<h1 class="kor-title right0">: 세계의 구체화</h1>
+					<h2 class="font-black padding-top50"><span class="border-bottom-black">1. 3차원의 세계로</span></h2>
+					<div class="flexbox">
+						 <img src="img01.png" class="size50 margin-top-mi20">
+						 <p class="eng-subtitle absolute top240 left130">reaserch</p>
+						 <p class="padding-top130">애니메이션을 만들기 앞서 애니메이션의 <br>배경이 되는 문화, 역사, 과학, 예술 등을<br>깊이 연구하고 체험을 통해 사실적인<br>세계와 매력적인 캐릭터를 구상한다.</p>	
+					</div>
+					<div class="relative">
+						<img src="img02.png" class="size50 padding-top350"  style="padding-left: 25.5%;">
+						 <p class="eng-subtitle margin-top-mi50 " style="left:50%">story</p>
+						 <p class="text-center ">
+						 	스토리 아티스트가 감독과 협력하여 애니메이션의<br>내러티브를 
+							시각화하기 시작한다.<br>스토리 아티스트는 내러티브, 캐릭터, 세계뿐만<br>아니라 
+							영화의 전체적인 방향에 맞춰<br>감정, 표현, 타이밍, 스테이징, 프레이밍까지 고려한다.
+						 </p>
+					</div>
+					<div class="margin-auto block relative">
+						<img src="img03.png" class="size50 padding-top300 block right0 relative" style="margin-left: -12%"></div>
+						 <p class="eng-subtitle margin-top-mi50 margin-auto">visual<br>development</p>
+						 <br> <br>
+						  <p class="right0 text-left">
+						 	프로덕션 디자인 팀이 캐릭터, 세계관,<br>
+							스토리를 생생하게 구체화한다. 이 단계에서는<br> 
+							리서치와 스토리를 통해 얻은 정보를 바탕으로 <br>
+							영화의 비주얼을 탐색하고 정립한다.
+						 </p>
+						 <br>
+						   <p class="right0 text-left">
+						 	비주얼 디벨롭 아티스트는 색감, 디자인,<br>
+							형태등을 고려하여 캐릭터와 배경을 제작하고<br>
+							스토리의 테마를 시각적으로 강화한다.
+						 </p>
+						<div>
+							<p class="eng-subtitle nobg padding-top130" style="font-size: 3em;">More About<br>Visual Development</p>
+							<img src="img05.jpg" style="width:100%">
+							<p class="right0 text-left">
+						 	매력적인 캐릭터를 창조하라
+							</p>
+							<p class="right0 text-left">
+						 	“ 캐릭터는 어떻게 생겼을까? 어떤 옷을 입을까? 어디에 살고 있을까?<br>이러한 질문은 스토리의 주제를 강조하는 데 도움이 되며,<br>비주얼 디벨롭먼트는 이러한 아이디어를 실현하는 첫 번째 단계이다. ”
+							</p>
+						</div>
+						<div>
+							<h2 class="font-white padding-top300"><span class="border-bottom-white">2. 편집과 사운드</span></h2>
+							<img src="img04.png" style="width:50%">
+							<p class="eng-subtitle margin-top-mi50 margin-auto">
+								editorial
+							</p>
+							<p class="right0 text-left">
+						 	편집팀은 감독의 비전을 컷으로 구체화하고<br>
+							구현하는 데 도움을 준다. 적절한 리듬과<br>
+							페이스로 스토리를 전달하는 역할을 담당한다.
+						 </p>
+
+							<p class="eng-subtitle margin-top-mi50 margin-auto">
+								sound
+							</p>
+							<p class="right0 text-left" style="padding-bottom: 200px">
+						 	또한 편집자는 제작 과정 전반에 걸쳐 임시 음향<br>
+							효과와 음악 편집을 감독한다. 사운드 디자니어 및<br>
+							음악 작곡가와 협업하여 최종 포스트 프로덕션<br>과정에서 일관된 영화의 사운드를 구현한다.
+						 </p>
+
+						
+						</div>
+					</div>
+			</div>
+	
+				
+		</div>
+	</div>
+		
+	</section>
+
+
+</body>
+</html>
